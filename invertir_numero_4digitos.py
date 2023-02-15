@@ -5,10 +5,14 @@
 A = int(input("se ingresa un numero de 4 digitos: "))
 # processing
 
-c4 = A % 10
-c3 = int((A % 100) / 10)
-C2 = int((A % 1000) / 100)
-C1 = int((A - (A% 1000)) / 1000)
+d1 =(n%10)*1000
+pe =n//10
+d2 =(pe%10)*100
+pe =pe//10
+d3 =(pe%10)*10
+d4 =pe //10
+
+nj = d1 + d2 + d3 + d4
 
 #output 
 
@@ -16,4 +20,4 @@ print("------------------------------")
 print("--------resultados------------")
 print("------------------------------")
  
-print(" NUMERO INVERSO: " + str(c4) + str(c3) + str(C2) + str(C1))
+print(" NUMERO INVERSO: " + str(nj))
